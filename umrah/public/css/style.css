@@ -1,0 +1,144 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+.remote-audio {
+    margin-bottom: 10px;
+}
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.remote-audio {
+    transition: opacity 0.3s ease;
+}
+
+.remote-audio:hover {
+    opacity: 0.8;
+}
+    .entry-modal {
+        width: 50%;
+        padding: 2rem;
+    }
+    .meet-area {
+        width: 50%;
+        padding: 2rem;
+    }
+    .chat-room {
+        width: 50%;
+        max-width: 50%;
+    }
+    .meet-controls-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    .meet-controls-bar button {
+        width: 50%;
+    }
+    /* Animasi fade-in */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .fade-in {
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+        .entry-modal {
+            width: 90%;
+            padding: 1rem;
+        }
+
+        .meet-area {
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .chat-room {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .meet-controls-bar {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .meet-controls-bar button {
+            width: 100%;
+        }
+
+        .remote-audio {
+            width: 100%;
+        }
+
+        .chat-messages {
+            height: 200px;
+        }
+    }
+    @keyframes slideIn {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    
+    .chat-messages div {
+        animation: slideIn 0.3s ease-out;
+    }
+    body {
+        background-color: white;
+    }
+    @keyframes bubble {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    .message-bubble {
+        animation: bubble 0.3s ease-out;
+        transform-origin: bottom;
+    }
+    
+    .mb-2 {
+        margin-bottom: 0.5rem;
+    }
+    
+    .p-2 {
+        padding: 0.5rem;
+    }
+    
+    .rounded-lg {
+        border-radius: 0.5rem;
+    }
+    
+    .ml-auto {
+        margin-left: auto;
+    }
+    
+    .mr-auto {
+        margin-right: auto;
+    }
+    
+    .text-right {
+        text-align: right;
+    }    
